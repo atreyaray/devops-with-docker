@@ -1,0 +1,77 @@
+Script started on Wed Jul 20 15:47:03 2022
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker run --co  name container1 -d nginx[?2004l
+bb37911fe250444aa54c19e90f9249a78618a7b2d8e1db8d530ed9be12f35926
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hdocker run --name container1 -d nginx[P[9C [10D2 -d nginx[9D[?2004l
+c07b0b89359f4221de73a899646eea663bd77e1814c35cb407e9cb09aca77f2c
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hdocker run --name container2 -d nginx[P[9C [10D3 -d nginx[9D[?2004l
+1c4ae8ce92045a59f8f6f3c3aa693227a2dd5381e822b05fc19bec4120d824d3
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker ps - [?2004l
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS     NAMES
+1c4ae8ce9204   nginx                    "/docker-entrypoint.…"   8 seconds ago    Up 8 seconds    80/tcp    container3
+c07b0b89359f   nginx                    "/docker-entrypoint.…"   13 seconds ago   Up 12 seconds   80/tcp    container2
+bb37911fe250   nginx                    "/docker-entrypoint.…"   18 seconds ago   Up 17 seconds   80/tcp    container1
+df9bcb3640e4   7ee06a8921d9             "python app.py"          6 days ago       Up 6 days                 k8s_discovery-api_discovery-api-deployment-89549d7d-kpsdp_default_dad4d1be-8b8e-4f4d-87f3-198f4ac264f3_0
+b0127ddbd0a6   mongo                    "docker-entrypoint.s…"   6 days ago       Up 6 days                 k8s_mongo_mongo-f64c7d45f-kjfwq_default_080de53b-10c9-4617-8e7a-6adb7e55d315_0
+8a3628112b57   wurstmeister/kafka       "sh -c 'exec kafka-s…"   6 days ago       Up 6 days                 k8s_kafka_kafka-5ff7cc856c-6cnh7_default_b5c45653-4d68-4e13-8754-1f2f1b482ccd_0
+c2720f901d59   wurstmeister/zookeeper   "/bin/sh -c '/usr/sb…"   6 days ago       Up 6 days                 k8s_zookeeper_zookeeper-865599ff47-tr9bd_default_afb92717-b35d-4684-b05a-08a8f4fefc54_0
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker stop container1 container2[?2004l
+container1
+container2
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker ps[?2004l
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS     NAMES
+1c4ae8ce9204   nginx                    "/docker-entrypoint.…"   37 seconds ago   Up 36 seconds   80/tcp    container3
+df9bcb3640e4   7ee06a8921d9             "python app.py"          6 days ago       Up 6 days                 k8s_discovery-api_discovery-api-deployment-89549d7d-kpsdp_default_dad4d1be-8b8e-4f4d-87f3-198f4ac264f3_0
+b0127ddbd0a6   mongo                    "docker-entrypoint.s…"   6 days ago       Up 6 days                 k8s_mongo_mongo-f64c7d45f-kjfwq_default_080de53b-10c9-4617-8e7a-6adb7e55d315_0
+8a3628112b57   wurstmeister/kafka       "sh -c 'exec kafka-s…"   6 days ago       Up 6 days                 k8s_kafka_kafka-5ff7cc856c-6cnh7_default_b5c45653-4d68-4e13-8754-1f2f1b482ccd_0
+c2720f901d59   wurstmeister/zookeeper   "/bin/sh -c '/usr/sb…"   6 days ago       Up 6 days                 k8s_zookeeper_zookeeper-865599ff47-tr9bd_default_afb92717-b35d-4684-b05a-08a8f4fefc54_0
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker stop container 3[?2004l
+container3
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker remo   rm  m container1 container2 container2 3[?2004l
+container1
+container2
+container3
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker rmi nic  ginc x[?2004l
+Untagged: nginx:latest
+Untagged: nginx@sha256:1761fb5661e4d77e107427d8012ad3a5955007d997e0f4a3d41acc9ff20467c7
+Deleted: sha256:fd2d3e51789eafe943eec792c81e5297ae23570f2a24ed239118f3226e74a1cc
+Deleted: sha256:50cfd4017b31e7aaeaedb8256c13aa7c8fe7bb86e423f52b93dab7c34c63099b
+Deleted: sha256:478c34e89968a119d048c0061b65df4b8e0aaa16cd847e778c440362b75d34d0
+Deleted: sha256:b951d52978aa7a3d0e2a40265f2366f38ed9f658ede501bf81f2b0086789a289
+Deleted: sha256:9b7a5da44ffa7b48246cbec2e0ba020a8d417062c2bf9d8f1cb222929eee421b
+Deleted: sha256:e0dac97f89ec9407e5faa809430f87635a78526bb0f57735cf7a892901d89961
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocks er ps[?2004l
+CONTAINER ID   IMAGE                    COMMAND                  CREATED      STATUS      PORTS     NAMES
+df9bcb3640e4   7ee06a8921d9             "python app.py"          6 days ago   Up 6 days             k8s_discovery-api_discovery-api-deployment-89549d7d-kpsdp_default_dad4d1be-8b8e-4f4d-87f3-198f4ac264f3_0
+b0127ddbd0a6   mongo                    "docker-entrypoint.s…"   6 days ago   Up 6 days             k8s_mongo_mongo-f64c7d45f-kjfwq_default_080de53b-10c9-4617-8e7a-6adb7e55d315_0
+8a3628112b57   wurstmeister/kafka       "sh -c 'exec kafka-s…"   6 days ago   Up 6 days             k8s_kafka_kafka-5ff7cc856c-6cnh7_default_b5c45653-4d68-4e13-8754-1f2f1b482ccd_0
+c2720f901d59   wurstmeister/zookeeper   "/bin/sh -c '/usr/sb…"   6 days ago   Up 6 days             k8s_zookeeper_zookeeper-865599ff47-tr9bd_default_afb92717-b35d-4684-b05a-08a8f4fefc54_0
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker ps -as[?2004l
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED       STATUS                     PORTS     NAMES                                                                                                      SIZE
+df9bcb3640e4   7ee06a8921d9                          "python app.py"          6 days ago    Up 6 days                            k8s_discovery-api_discovery-api-deployment-89549d7d-kpsdp_default_dad4d1be-8b8e-4f4d-87f3-198f4ac264f3_0   97.9kB (virtual 456MB)
+b0127ddbd0a6   mongo                                 "docker-entrypoint.s…"   6 days ago    Up 6 days                            k8s_mongo_mongo-f64c7d45f-kjfwq_default_080de53b-10c9-4617-8e7a-6adb7e55d315_0                             0B (virtual 671MB)
+8a3628112b57   wurstmeister/kafka                    "sh -c 'exec kafka-s…"   6 days ago    Up 6 days                            k8s_kafka_kafka-5ff7cc856c-6cnh7_default_b5c45653-4d68-4e13-8754-1f2f1b482ccd_0                            420MB (virtual 877MB)
+c2720f901d59   wurstmeister/zookeeper                "/bin/sh -c '/usr/sb…"   6 days ago    Up 6 days                            k8s_zookeeper_zookeeper-865599ff47-tr9bd_default_afb92717-b35d-4684-b05a-08a8f4fefc54_0                    32.8kB (virtual 510MB)
+d9b765a9724c   gcr.io/k8s-minikube/kicbase:v0.0.32   "/usr/local/bin/entr…"   2 weeks ago   Exited (137) 12 days ago             iot-tech-node                                                                                              3.15MB (virtual 1.06GB)
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker images[?2004l
+REPOSITORY                                                TAG                                                                          IMAGE ID       CREATED         SIZE
+nodered/node-red                                          latest                                                                       7fbcd13dd8a8   6 days ago      485MB
+discovery-api                                             latest                                                                       7ee06a8921d9   6 days ago      456MB
+discovery-engine                                          latest                                                                       16bcac29626d   6 days ago      453MB
+<none>                                                    <none>                                                                       f0820b570e16   2 weeks ago     455MB
+<none>                                                    <none>                                                                       6ff1e0456109   2 weeks ago     452MB
+gcr.io/k8s-minikube/kicbase                               v0.0.32                                                                      ef41443dce8e   4 weeks ago     1.06GB
+mongo                                                     latest                                                                       a3da2fc22ead   5 weeks ago     671MB
+ubuntu                                                    latest                                                                       a7870fd478f4   6 weeks ago     69.2MB
+wurstmeister/kafka                                        latest                                                                       db97697f6e28   7 weeks ago     457MB
+hubproxy.docker.internal:5000/docker/desktop-kubernetes   kubernetes-v1.24.0-cni-v0.8.5-critools-v1.17.0-cri-dockerd-v0.2.0-1-debian   44b0e7b8434b   2 months ago    337MB
+k8s.gcr.io/kube-apiserver                                 v1.24.0                                                                      b62a103951f4   2 months ago    126MB
+k8s.gcr.io/kube-scheduler                                 v1.24.0                                                                      b81513b3bfb4   2 months ago    50MB
+k8s.gcr.io/kube-proxy                                     v1.24.0                                                                      66e1443684b0   2 months ago    106MB
+k8s.gcr.io/kube-controller-manager                        v1.24.0                                                                      59fad34d4fe0   2 months ago    116MB
+k8s.gcr.io/etcd                                           3.5.3-0                                                                      a9a710bb96df   3 months ago    178MB
+k8s.gcr.io/pause                                          3.7                                                                          e5a475a03805   4 months ago    514kB
+k8s.gcr.io/coredns/coredns                                v1.8.6                                                                       edaa71f2aee8   9 months ago    46.8MB
+docker/desktop-vpnkit-controller                          v2.0                                                                         2edf9c994f19   14 months ago   19.2MB
+docker/desktop-storage-provisioner                        v2.0                                                                         c027a58fa0bb   14 months ago   39.8MB
+wurstmeister/zookeeper                                    latest                                                                       3f43f72cb283   3 years ago     510MB
+[1m[7m%[27m[1m[0m                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004h
