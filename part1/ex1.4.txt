@@ -1,0 +1,135 @@
+Script started on Fri Jul 22 10:18:53 2022
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hdocker ps -akill container1.3[17Dexec -it container1.3 bash [27Dps | grep devops          [10D[16Drun -d --rm --name container1.3 devopsdockeruh/simple-web-service:ubuntu [41D                                        [40D[32Dpull devopsdockeruh/simple-web-service:ubuntu[52Dscript ex1.3.txt                                    [36D[16Dclear           [10Ddocker ps -arm container1.3[15Dps -a          [10Dstop container1.3[17Dps               [15Dstop container1.3[17Dps               [15D[9Dls       docker psstop container1.3[17Dps -a            [12Drm container1.3[15Dps -a          [10D[12Dclear       script ex1.3.txt[16Ddocker pull devopsdockeruh/simple-web-service:ubuntu[45Drun -d --rm --name container1.3              [13Ddevopsdockeruh/simple-web-service:ubuntu [73Dps | grep devops                                                        [56D[16Dexec -it container1.3 bash [27Dkill[4P[14C         [10D[17Dps -a            [12D[12D            [12Ddocker ps -akill container1.3[17Dexec -it container1.3 bash [27Dps | grep devops          [10D[16Drun -d --rm --name container1.3 devopsdockeruh/simple-web-service:ubuntu [73Dps | grep devops                                                        [56D[16Dexec -it container1.3 bash [27Dkill[4P[14C         [10D[17Dps -a            [12D     r run -it -= -rm 00  --name container1.4 un buntu sh  [7msh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[27m[95D[27ms[27mh[27m [27m-[27mc[27m [27m'[27me[27mc[27mh[27mo[27m [27m"[27mI[27mn[27mp[27mu[27mt[27m [27mw[27me[27mb[27ms[27mi[27mt[27me[27m:[27m"[27m;[27m [27mr[27me[27ma[27md[27m [27mw[27me[27mb[27ms[27mi[27mt[27me[27m;[27m [27me[27mc[27mh[27mo[27m [27m"[27mS[27me[27ma[27mr[27mc[27mh[27mi[27mn[27mg[27m.[27m.[27m"[27m;[27m [27ms[27ml[27me[27me[27mp[27m [27m1[27m;[27m [27mc[27mu[27mr[27ml[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27m$[27mw[27me[27mb[27ms[27mi[27mt[27me[27m;[27m'[7ma[7mp[7mt[7m-[7mg[7me[7mt[7m [7mu[7mp[7md[7ma[7mt[7me[7m [7m&[7m&[7m [7ma[7mp[7mt[7m-[7mg[7me[7mt[7m [7mi[7mn[7ms[7mt[7ma[7ml[7ml[7m [7m-[7my[7m [7mc[7mu[7mr[7ml[27mecho "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[K[A[119C[41D[27ma[27mp[27mt[27m-[27mg[27me[27mt[27m [27mu[27mp[27md[27ma[27mt[27me[27m [27m&[27m&[27m [27ma[27mp[27mt[27m-[27mg[27me[27mt[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m-[27my[27m [27mc[27mu[27mr[27ml;echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[A[119C echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[A[119C[?2004l[1B
+0% [Working]            Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+0% [1 InRelease 11.5 kB/270 kB 4%]                                  0% [Working]            Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [114 kB]
+0% [2 InRelease 29.4 kB/114 kB 26%]                                   0% [Working]0% [Waiting for headers]                        Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [99.8 kB]
+0% [3 InRelease 16.5 kB/99.8 kB 17%]0% [3 InRelease 83.5 kB/99.8 kB 84%]                                    0% [Waiting for headers]                        Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [110 kB]
+0% [4 InRelease 30.7 kB/110 kB 28%]                                   0% [Working]0% [Waiting for headers]                        Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]
+0% [5 Packages 6229 B/1758 kB 0%]16% [5 Packages 148 kB/1758 kB 8%]                                  22% [Waiting for headers]                         Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+23% [6 Packages 110 kB/17.2 MB 1%]23% [5 Packages store 0 B] [6 Packages 110 kB/17.2 MB 1%]                                                         27% [6 Packages 1062 kB/17.2 MB 6%]61% [6 Packages 9946 kB/17.2 MB 58%]                                    88% [Waiting for headers]                         Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]
+89% [7 Packages 32.2 kB/224 kB 14%]89% [6 Packages store 0 B] [7 Packages 33.9 kB/224 kB 15%]                                                          89% [6 Packages store 0 B]                          Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]
+                          Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [203 kB]
+89% [6 Packages store 0 B] [9 Packages 9312 B/203 kB 5%]                                                        90% [6 Packages store 0 B] [Waiting for headers]                                                Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [77.0 kB]
+90% [6 Packages store 0 B] [10 Packages 22.2 kB/77.0 kB 29%]                                                            90% [6 Packages store 0 B] [Waiting for headers]                                                Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [465 kB]
+91% [6 Packages store 0 B] [11 Packages 37.7 kB/465 kB 8%]                                                          92% [6 Packages store 0 B] [Waiting for headers]                                                Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [1250 B]
+                                                Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [5802 B]
+92% [6 Packages store 0 B] [Waiting for headers]                                                Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [267 kB]
+92% [6 Packages store 0 B] [14 Packages 25.2 kB/267 kB 9%]                                                          93% [6 Packages store 0 B] [Waiting for headers]                                                Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [61.7 kB]
+93% [6 Packages store 0 B] [15 Packages 7419 B/61.7 kB 12%]                                                           93% [6 Packages store 0 B] [Waiting for headers]                                                Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [107 kB]
+94% [6 Packages store 0 B] [16 Packages 11.6 kB/107 kB 11%]                                                           94% [6 Packages store 0 B]                          94% [Working]94% [7 Packages store 0 B]                          95% [Working]95% [8 Packages store 0 B]                          96% [Working]96% [9 Packages store 0 B]                          96% [Working]96% [10 Packages store 0 B]                           97% [Working]97% [11 Packages store 0 B]                           97% [Working]98% [Working]98% [13 Packages store 0 B]                           98% [Working]98% [14 Packages store 0 B]                           99% [Working]99% [15 Packages store 0 B]                           99% [Working]99% [16 Packages store 0 B]                           100% [Working]              Fetched 21.0 MB in 2s (9072 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl publicsuffix
+0 upgraded, 15 newly installed, 0 to remove and 9 not upgraded.
+Need to get 2934 kB of archives.
+After this operation, 6760 kB of additional disk space will be used.
+0% [Working]            Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openssl arm64 3.0.2-0ubuntu1.6 [1161 kB]
+0% [1 openssl 2321 B/1161 kB 0%]                                33% [Working]             Get:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 ca-certificates all 20211016 [148 kB]
+34% [2 ca-certificates 24.4 kB/148 kB 17%]                                          38% [Waiting for headers]                         Get:3 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnghttp2-14 arm64 1.43.0-1build3 [75.4 kB]
+38% [3 libnghttp2-14 1291 B/75.4 kB 2%]                                       Get:4 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpsl5 arm64 0.21.0-1.2build2 [58.3 kB]
+                                       42% [4 libpsl5 15.6 kB/58.3 kB 27%]                                   45% [Waiting for headers]                         Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 publicsuffix all 20211207.1025-1 [129 kB]
+45% [5 publicsuffix 7388 B/129 kB 6%]                                     Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libbrotli1 arm64 1.0.9-2build6 [314 kB]
+                                     50% [6 libbrotli1 2716 B/314 kB 1%]                                   59% [Waiting for headers]                         Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsasl2-modules-db arm64 2.1.27+dfsg2-3ubuntu1 [21.3 kB]
+59% [7 libsasl2-modules-db 377 B/21.3 kB 2%]                                            Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsasl2-2 arm64 2.1.27+dfsg2-3ubuntu1 [55.6 kB]
+                                            62% [8 libsasl2-2 23.9 kB/55.6 kB 43%]                                      Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-2.5-0 arm64 2.5.12+dfsg-0ubuntu0.22.04.1 [181 kB]
+66% [9 libldap-2.5-0 55.6 kB/181 kB 31%]                                        70% [Waiting for headers]                         Get:10 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2build4 [59.2 kB]
+72% [10 librtmp1 40.3 kB/59.2 kB 68%]                                     73% [Waiting for headers]                         Get:11 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libssh-4 arm64 0.9.6-2build1 [184 kB]
+74% [11 libssh-4 4989 B/184 kB 3%]                                  80% [Waiting for headers]                         Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcurl4 arm64 7.81.0-1ubuntu1.3 [284 kB]
+80% [12 libcurl4 17.3 kB/284 kB 6%]                                   89% [Waiting for headers]                         Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 curl arm64 7.81.0-1ubuntu1.3 [190 kB]
+89% [13 curl 12.6 kB/190 kB 7%]                               95% [Waiting for headers]                         Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-common all 2.5.12+dfsg-0ubuntu0.22.04.1 [16.4 kB]
+                         Get:15 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsasl2-modules arm64 2.1.27+dfsg2-3ubuntu1 [57.3 kB]
+98% [15 libsasl2-modules 17.6 kB/57.3 kB 31%]                                             100% [Working]              Fetched 2934 kB in 1s (5571 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4389 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.6_arm64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.6) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016_all.deb ...
+Unpacking ca-certificates (20211016) ...
+Selecting previously unselected package libnghttp2-14:arm64.
+Preparing to unpack .../02-libnghttp2-14_1.43.0-1build3_arm64.deb ...
+Unpacking libnghttp2-14:arm64 (1.43.0-1build3) ...
+Selecting previously unselected package libpsl5:arm64.
+Preparing to unpack .../03-libpsl5_0.21.0-1.2build2_arm64.deb ...
+Unpacking libpsl5:arm64 (0.21.0-1.2build2) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../04-publicsuffix_20211207.1025-1_all.deb ...
+Unpacking publicsuffix (20211207.1025-1) ...
+Selecting previously unselected package libbrotli1:arm64.
+Preparing to unpack .../05-libbrotli1_1.0.9-2build6_arm64.deb ...
+Unpacking libbrotli1:arm64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../06-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1_arm64.deb ...
+Unpacking libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../07-libsasl2-2_2.1.27+dfsg2-3ubuntu1_arm64.deb ...
+Unpacking libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Selecting previously unselected package libldap-2.5-0:arm64.
+Preparing to unpack .../08-libldap-2.5-0_2.5.12+dfsg-0ubuntu0.22.04.1_arm64.deb ...
+Unpacking libldap-2.5-0:arm64 (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+Selecting previously unselected package librtmp1:arm64.
+Preparing to unpack .../09-librtmp1_2.4+20151223.gitfa8646d.1-2build4_arm64.deb ...
+Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:arm64.
+Preparing to unpack .../10-libssh-4_0.9.6-2build1_arm64.deb ...
+Unpacking libssh-4:arm64 (0.9.6-2build1) ...
+Selecting previously unselected package libcurl4:arm64.
+Preparing to unpack .../11-libcurl4_7.81.0-1ubuntu1.3_arm64.deb ...
+Unpacking libcurl4:arm64 (7.81.0-1ubuntu1.3) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../12-curl_7.81.0-1ubuntu1.3_arm64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.3) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../13-libldap-common_2.5.12+dfsg-0ubuntu0.22.04.1_all.deb ...
+Unpacking libldap-common (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libsasl2-modules:arm64.
+Preparing to unpack .../14-libsasl2-modules_2.1.27+dfsg2-3ubuntu1_arm64.deb ...
+Unpacking libsasl2-modules:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libpsl5:arm64 (0.21.0-1.2build2) ...
+Setting up libbrotli1:arm64 (1.0.9-2build6) ...
+Setting up libsasl2-modules:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libnghttp2-14:arm64 (1.43.0-1build3) ...
+Setting up libldap-common (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+Setting up libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libssh-4:arm64 (0.9.6-2build1) ...
+Setting up openssl (3.0.2-0ubuntu1.6) ...
+Setting up publicsuffix (20211207.1025-1) ...
+Setting up libldap-2.5-0:arm64 (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+Setting up ca-certificates (20211016) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/aarch64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+Setting up libcurl4:arm64 (7.81.0-1ubuntu1.3) ...
+Setting up curl (7.81.0-1ubuntu1.3) ...
+Processing triggers for libc-bin (2.35-0ubuntu3) ...
+Processing triggers for ca-certificates (20211016) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004h
