@@ -1,0 +1,48 @@
+Script started on Fri Jul 22 15:22:10 2022
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker images |g  grep devops dockeruh[?2004l
+devopsdockeruh/simple-web-service                         ubuntu                                                                       4e3362e907d5   16 months ago   83MB
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker pull devopsdockeruh/simple-webs -service:alpine[?2004l
+alpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]   29.4kB/2.812MB[3B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K1dace236434b: Downloading [>                                                  ]  52.48kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [=======================>                           ]   1.33MB/2.812MB[3B[2A[2K1dace236434b: Downloading [===========>                                       ]  1.195MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [================================================>  ]  2.734MB/2.812MB[3B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[2A[2K1dace236434b: Downloading [====================>                              ]  2.083MB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [=========================================>         ]  2.359MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=========================================>         ]  4.229MB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [========================================>          ]  4.194MB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker pull devopsdockeruh/simple-web-service:alpine[45Dimages | grep devopsdockeruh                 [17D[?2004l
+devopsdockeruh/simple-web-service                         ubuntu                                                                       4e3362e907d5   16 months ago   83MB
+devopsdockeruh/simple-web-service                         alpine                                                                       fd312adc88e0   16 months ago   15.7MB
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker run -d --t i  it --rm --name container1.5 devopsdockeruh/simple-web-service:alpine[?2004l
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+d7c010d7149e38fca274c4d9506b93dbe1156b55aa03b0107cc5e2a48f4e6c22
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker exec -it sh container1.5[?2004l
+Error: No such container: sh
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hdocker exec -it sh container1.5[P[12C [13D[P[12C [13D[P[12C [13D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C sh[?2004l
+/usr/src/app # [6ntails -f t[J./text[J[J[Jexts[J.log
+sh: tails: not found
+/usr/src/app # [6n/usr/src/app # tails -f ./text.log[J -f ./text.log[J[14D -f ./text.log
+2022-07-22 12:24:25 +0000 UTC
+2022-07-22 12:24:27 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-07-22 12:24:29 +0000 UTC
+2022-07-22 12:24:31 +0000 UTC
+2022-07-22 12:24:33 +0000 UTC
+2022-07-22 12:24:35 +0000 UTC
+2022-07-22 12:24:37 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-07-22 12:24:39 +0000 UTC
+2022-07-22 12:24:41 +0000 UTC
+2022-07-22 12:24:43 +0000 UTC
+2022-07-22 12:24:45 +0000 UTC
+^C
+/usr/src/app # [6nexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker ps -a | devops[?2004l
+zsh: command not found: devops
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hdocker ps -a | devops     g  grep devops[?2004l
+d7c010d7149e   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"    About a minute ago   Up About a minute                    container1.5
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker rm [7md7c010d7149e[27m[12D[27md[27m7[27mc[27m0[27m1[27m0[27md[27m7[27m1[27m4[27m9[27me[?2004l
+Error response from daemon: You cannot remove a running container d7c010d7149e38fca274c4d9506b93dbe1156b55aa03b0107cc5e2a48f4e6c22. Stop the container before attempting removal or force remove
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hddocker stop [7md7c010d7149e[27m[12D[27md[27m7[27mc[27m0[27m1[27m0[27md[27m7[27m1[27m4[27m9[27me[?2004l
+d7c010d7149e
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004hd docker stop d7c010d7149e[17Drm[P[P[13C  [15Dps -a | grep devops[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                        ]7;file://EMB-356VQ6LT/Users/erayatr/Desktop/devops-with-docker[0m[27m[24m[Jerayatr@EMB-356VQ6LT devops-with-docker % [K[?2004h
