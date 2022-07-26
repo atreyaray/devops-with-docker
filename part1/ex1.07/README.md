@@ -1,3 +1,6 @@
-docker build . -t web-server
+# Exercise 1.7
 
-docker run web-server
+```bash
+$ docker build . -t web-server
+$ docker run web-server
+```

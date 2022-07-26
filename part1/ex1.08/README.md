@@ -1,3 +1,7 @@
-docker build . -t curler
+# Exercise 1.8
 
-docker run -it curler
+
+```bash
+$ docker build . -t curler
+$ docker run -it curler
+```
